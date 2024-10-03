@@ -1,22 +1,22 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
-    "lib": ["ES2023"],
-    "module": "ESNext",
-    "skipLibCheck": true,
+    "target": "ES2022",                               // ตั้งค่าระดับของ JavaScript ที่จะคอมไพล์
+    "lib": ["ES2023"],                                // ใช้ไลบรารีสำหรับ ES2023
+    "module": "ESNext",                               // ใช้โมดูล ESNext
+    "skipLibCheck": true,                             // ข้ามการตรวจสอบไลบรารี (ช่วยให้การคอมไพล์เร็วขึ้น)
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "noEmit": true,
+    "moduleResolution": "bundler",                    // ใช้การค้นหาโมดูลแบบ Bundler (เหมาะสำหรับ Vite)
+    "allowImportingTsExtensions": true,               // อนุญาตให้ใช้การนำเข้าไฟล์ .ts ในโค้ด
+    "isolatedModules": true,                          // เปิดใช้งานการตรวจสอบโมดูลแยก
+    "moduleDetection": "force",                       // บังคับให้ทุกไฟล์เป็นโมดูล
+    "noEmit": true,                                   // ไม่ให้ TypeScript สร้างไฟล์การคอมไพล์
 
     /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "strict": true,                                   // เปิดใช้งานการตรวจสอบที่เข้มงวด
+    "noUnusedLocals": true,                           // ห้ามมีตัวแปรที่ไม่ได้ใช้
+    "noUnusedParameters": true,                       // ห้ามมีพารามิเตอร์ที่ไม่ได้ใช้
+    "noFallthroughCasesInSwitch": true                // ป้องกันไม่ให้ case ใน switch โค้ดหลุด
   },
-  "include": ["vite.config.ts"]
+  "include": ["vite.config.ts"]                        // ระบุว่าไฟล์ที่จะคอมไพล์คือ vite.config.ts
 }

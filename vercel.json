@@ -9,12 +9,5 @@
         }
       ]
     }
-  ],
-  "redirects": [
-    {
-      "source": "/old-directory/(.*)",
-      "destination": "/new-directory/$1",
-      "permanent": true
-    }
   ]
 }
